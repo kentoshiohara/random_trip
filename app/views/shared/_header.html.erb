@@ -1,0 +1,23 @@
+<%# CSS・・・assets/stylesheets/shared/header.css %>
+<header class='top-page-header'>
+  <div class='header-contents'>
+    <div class='header-left'>
+      <div class='lists-left'>
+      <%= link_to image_tag("randomtrip_icon2.png", width:"64", height:"64", class:"randomtrip-icon"), "/" %>
+      <div class='header-title'>Random Trip</div>
+    </div>
+    <div class='header-right'>
+      <ul class='lists-right'>
+        <% if user_signed_in? %>
+          <li><%= link_to 'マイページ' "#", class: "mypage" %></li>
+          <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li>
+          <li><%= link_to '目的地診断', "#", class: "where-to-go" %></li>
+        <% else %>
+          <li><%= link_to 'ログイン', "#", class: "login" %></li>
+          <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+          <li><%= link_to '目的地診断', "#", class: "where-to-go" %></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+</header>

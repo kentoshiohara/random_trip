@@ -9,14 +9,19 @@
     <div class='randomtrip-details'>
       <h2 class='footer-content-head'>Random Tripを利用する</h2>
       <ul>
-        <li><%= link_to '目的地を決める', "#", class: "footer-link" %></li>
+        <li><%= link_to '旅行先を決める', "#", class: "footer-link" %></li>
         <li><%= link_to 'マイページ', "#", class: "footer-link" %></li>
+        <li><%= link_to '観光情報を見る', "#", class: "footer-link" %></li>
       </ul>
     </div>
   </div>
   <div class='randomtrip-logo'>
-    <%= link_to image_tag("randomtrip_icon2.png", width:"64", height:"64", class:"logo-black"), "#" %>
-    <span>Random Trip</span>
+    <div class='randomtrip-logo-icon'>
+      <%= link_to image_tag("randomtrip_icon2.png", width:"64", height:"64", class:"logo-black"), "#" %>
+    </div>
+    <div class='randomtrip-footer-title'>Random Trip</div>
   </div>
-  <p>© Random Trip</p>
+  <div class='copy-right'>
+    <p>© Random Trip</p>
+  </div>
 </div>

@@ -5,16 +5,18 @@
 .top-page-header {
   width: 100vw;
   padding: 2vh 15vw;
-  /* display: flex;
-  flex-direction: column; */
+  background: lightgray;
+  color: black;
 }
 
 .header-contents {
+  width:100%;
   display:flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-.lists-left {
+.header-left {
   display: flex;
   min-width: 200px;
   align-items: center;
@@ -22,45 +24,50 @@
 
 .header-title {
   margin-left: 2vw;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.randomtrip-letter {
+  color: inherit;
 }
 
 .lists-right {
   display: flex;
   list-style: none;
-  align-items: flex-end;
+  font-size: 16px;
 }
 
 
 .mypage {
   text-decoration: none;
   margin-right: 3vw;
-  color: #333333;
-  font-weight: bold;
+  color: black;
 }
 
 
 .logout {
   text-decoration: none;
-  color: #333333;
+  color:black;;
 }
 
 .login {
   text-decoration: none;
   line-height: 32px;
   margin-right: 3vw;
-  color: #333333;
+  color: black;
 }
 
 .sign-up {
   text-decoration: none;
-  color: #333333;
+  color: black;
   line-height: 32px;
   margin-right: 3vw;
 }
 
 .where-to-go {
   text-decoration: none;
-  color: #333333;
+  color: black;
   line-height: 32px;
   margin-right: 3vw;
 }

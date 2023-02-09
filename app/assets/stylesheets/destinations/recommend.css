@@ -1,0 +1,70 @@
+a {
+  text-decoration: none;
+}
+
+.recommendation-main {
+  width: 100vw;
+  /* height: 1200px; */
+  padding: 2vh 20vw;
+}
+
+.recommendation {
+  width: 85%;
+  min-width: 500px;
+  height: 1070px;
+  margin: 80px auto 80px;
+  background: rgb(240, 240, 240);;
+}
+
+.recommendation-title {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  text-align: center;
+  color: #232323;
+  background: rgb(221, 221, 221);
+  border-left: solid 10px rgb(178, 177, 177);
+}
+
+
+.recommendation-lists {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.recommendation-lists:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+
+.image {
+  width: 43%;
+  padding: 20px;
+}
+
+.prefecture-image {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+}
+
+.recommendation-details {
+  width: 43%;
+  justify-content: flex-start;
+  padding: 20px;
+}
+
+.prefecture-name {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 30px;
+}
+
+.prefecture-info {
+  line-height: 1.8rem;
+}

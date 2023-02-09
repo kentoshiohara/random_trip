@@ -1,0 +1,97 @@
+<%= render "shared/header" %>
+
+<div class="recommendation-main">
+  <div class="recommendation">
+    <div class="recommendation-title">診断結果</div>
+
+<%# 送られてきたtheme.idの情報を元に表示する都道府県の表示を変える %>
+    <% if @theme.id == 1 %>
+    <% @prefecture_gourmet.each do |prefecture| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        候補：<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 2 %>
+    <% @prefecture_resort.each do |prefecture| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        候補：<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 3 %>
+    <% @prefecture_hotspring.each do |prefecture| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        候補：<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 4 %>
+    <% @prefecture_amusementpark.each do |prefecture| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        旅行先候補：<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% else %>
+    <% @prefecture_others.each do |prefecture| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        旅行先候補：<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% end %>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

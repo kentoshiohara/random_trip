@@ -1,3 +1,34 @@
 <%= render "shared/header" %>
 
+<div class="questionnaire-container">
+  <div class="map">
+  <div class="questionnaire-contents">
+    <h2 class="questionnaire-title">診断アンケート</h2>
+
+    <%= form_with model: @destination, local: true do |f| %>
+    <%= render 'shared/error_messages', model: f.object %>
+    
+    <%# 旅行先診断アンケート %>
+    <div class="questionnaire-lists">
+      <div class="questionnaire-list">1.  お住まいの都道府県</div>
+      <%= f.collection_select(:prefecture_id, Prefecture.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"destination-prefecture"}) %>
+      <div class="questionnaire-list">2.  旅行のテーマ</div>
+      <%= f.collection_select(:theme_id, Theme.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"destination-theme"}) %>
+      <div class="questionnaire-list">3.  一緒に旅をするメンバー</div>
+      <%= f.collection_select(:member_id, Member.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"destination-member"}) %>
+      <div class="questionnaire-list">4.  旅をするシーズン</div>
+      <%= f.collection_select(:season_id, Season.all, :id, :name, {include_blank: "---"}, {class:"select-box", id:"destination-season"}) %>
+    </div>
+    <%# 旅行先診断アンケート %>
+
+    <%# 下部ボタン %>
+    <div class="questionnaire-btn-contents">
+      <%= f.submit "SUBMIT", class:"questionnaire-btn" %>
+    </div>
+    <%# /下部ボタン %>
+
+    <% end %>
+  </div>
+</div>
+
 <%= render "shared/footer" %>

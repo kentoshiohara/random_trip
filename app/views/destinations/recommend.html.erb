@@ -1,0 +1,97 @@
+<%= render "shared/header" %>
+
+<div class="recommendation-main">
+  <div class="recommendation">
+    <% if @theme.id == 1 %>
+    <% @prefecture_gourmet.each_with_index do |prefecture, i| %>  
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        <%= i + 1 %>．<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 2 %>
+    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        <%= i + 1 %>．<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 3 %>
+    <% @prefecture_resort.each_with_index do |prefecture, i| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        <%= i + 1 %>．<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% elsif @theme.id == 4 %>
+    <% @prefecture_amusementpark.each_with_index do |prefecture, i|  %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        <%= i + 1 %>．<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% else %>
+    <% @prefecture_others.each_with_index do |prefecture, i| %>
+    <ul class="recommendation-lists">
+      <li class="image">
+        <%= image_tag prefecture.image, class:"prefecture-image" %>
+      </li>
+      <li class="recommendation-details">
+        <h2 class="prefecture-name">
+        <%= i + 1 %>．<%= prefecture.name %>
+        </h2>
+        <p class="prefecture-info">
+        <%= prefecture.info %>
+        </p>
+      </li>
+    </ul>
+    <% end %>
+
+    <% end %>
+  </div>
+  <div class="back-btn-contents">
+    <%= link_to "BACK", new_destination_path, class:"back-btn"%>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

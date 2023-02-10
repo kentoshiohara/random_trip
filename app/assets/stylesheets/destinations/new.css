@@ -4,8 +4,6 @@ a {
 
 .questionnaire-container {
   width: 100vw;
-  height: 700px;
-  /* background: rgb(240, 240, 240); */
   background: rgb(238, 247, 255);
   padding-top:80px;
 }

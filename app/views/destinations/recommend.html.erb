@@ -3,7 +3,7 @@
 <div class="recommendation-main">
   <div class="recommendation">
     <% if @theme.id == 1 %>
-    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>  
+    <% @prefecture_gourmet.each_with_index do |prefecture, i| %>  
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
@@ -20,14 +20,14 @@
     <% end %>
 
     <% elsif @theme.id == 2 %>
-    <% @prefecture_resort.each do |prefecture| %>
+    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
       </li>
       <li class="recommendation-details">
         <h2 class="prefecture-name">
-        <%= prefecture.name %>
+        <%= i + 1 %>．<%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
         <%= prefecture.info %>
@@ -37,31 +37,31 @@
     <% end %>
 
     <% elsif @theme.id == 3 %>
-    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>
+    <% @prefecture_resort.each_with_index do |prefecture, i| %>
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
       </li>
       <li class="recommendation-details">
         <h2 class="prefecture-name">
-        <%= prefecture.name %>
+        <%= i + 1 %>．<%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
-        候補{i}：<%= prefecture.info %>
+        <%= prefecture.info %>
         </p>
       </li>
     </ul>
     <% end %>
 
     <% elsif @theme.id == 4 %>
-    <% @prefecture_amusementpark.each do |prefecture| %>
+    <% @prefecture_amusementpark.each_with_index do |prefecture, i|  %>
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
       </li>
       <li class="recommendation-details">
         <h2 class="prefecture-name">
-        <%= prefecture.name %>
+        <%= i + 1 %>．<%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
         <%= prefecture.info %>
@@ -71,14 +71,14 @@
     <% end %>
 
     <% else %>
-    <% @prefecture_others.each do |prefecture| %>
+    <% @prefecture_others.each_with_index do |prefecture, i| %>
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
       </li>
       <li class="recommendation-details">
         <h2 class="prefecture-name">
-        <%= prefecture.name %>
+        <%= i + 1 %>．<%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
         <%= prefecture.info %>

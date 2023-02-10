@@ -16,6 +16,7 @@ a {
   margin: 0 auto 80px;
   background: white;
   opacity: 0.8;
+  border-radius: 0 0 10px 10px;
 }
 
 .questionnaire-title {
@@ -30,6 +31,7 @@ a {
   color:white;
   background: #38a2ff;
   border-left: solid 10px #1760a0;
+  border-radius: 10px 10px 0 0 ;
 }
 
 .questionnaire-lists {

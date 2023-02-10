@@ -4,13 +4,14 @@ a {
 
 .main {
   width: 100vw;
+  height: 80vh;
 }
 
 /* 下部背景画像 */
 .background-image {
   position: relative;
   width: 100%;
-  height: 700px;
+  height: 100%;
   overflow: hidden;
 }
 
@@ -31,28 +32,29 @@ a {
 }
 
 .img1 {
-  background-image: url('osaka.jpg');
+  background-image: url('kagoshima.jpg');
   background-position: center;
 }
 
 .img2 {
-  background-image: url('okinawa.png');
+  background-image: url('osaka.jpg');
   animation-delay:4s;
 }
 
 .img3 {
-  background-image: url('kanagawa.jpg');
+  background-image: url('okinawa.png');
   background-position: center;
   animation-delay:8s;
 }
 
 .img4 {
-  background-image: url('hokkaido.jpg');
+  background-image: url('kanagawa.jpg');
+  background-position: center;
   animation-delay:12s;
 }
 
 .img5 {
-  background-image: url('tokyo.jpg');
+  background-image: url('hokkaido.jpg');
   animation-delay:16s;
 }
 
@@ -97,14 +99,13 @@ a {
 .container-title {
   font-size: 28px;
   font-weight: bold;
-  margin-bottom: 8px;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.08em;
 }
 
 .container-destination {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .destination-btn {

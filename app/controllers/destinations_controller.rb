@@ -32,6 +32,6 @@ class DestinationsController < ApplicationController
   private
 
   def destination_params
-    params.require(:destination).permit(:theme_id, :member_id, :season_id, :prefecture_id)
+    params.require(:destination).permit(:theme_id, :member_id, :season_id, :prefecture_id).merge(user_id: current_user.id)
   end 
 end

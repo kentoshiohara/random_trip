@@ -18,8 +18,8 @@ class DestinationsController < ApplicationController
   
   def recommend
   # binding.pry
-  @destinations= Destination.last(params[:id])
-  @theme = @destinations.theme
+  destination= Destination.last(params[:id])
+  @theme = destination.theme
   
   @prefecture_gourmet = Prefecture.where(theme1: "グルメ").sample(3)
   @prefecture_resort = Prefecture.where(theme2: "温泉").sample(3)

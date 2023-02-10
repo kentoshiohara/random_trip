@@ -3,7 +3,7 @@
 <div class="questionnaire-container">
   <div class="map">
   <div class="questionnaire-contents">
-    <h2 class="questionnaire-title">旅行先診断アンケート</h2>
+    <h2 class="questionnaire-title">診断アンケート</h2>
 
     <%= form_with model: @destination, local: true do |f| %>
     <%# <%= form_with url:recommend_destinations_path, local: true do |f| %> 
@@ -23,7 +23,7 @@
 
     <%# 下部ボタン %>
     <div class="questionnaire-btn-contents">
-      <%= f.submit "診断する", class:"questionnaire-btn" %>
+      <%= f.submit "SUBMIT", class:"questionnaire-btn" %>
     </div>
     <%# /下部ボタン %>
 

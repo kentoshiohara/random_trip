@@ -1,15 +1,15 @@
 <div class='footer'>
   <div class='footer-contents'>
     <div class='randomtrip-details'>
-      <h2 class='footer-content-head'>Random Tripについて</h2>
+      <h2 class='footer-content-head'>ABOUT</h2>
       <ul>
         <li><%= link_to 'アプリ概要', "#", class: "footer-link" %></li>
       </ul>
     </div>
     <div class='randomtrip-details'>
-      <h2 class='footer-content-head'>Random Tripを利用する</h2>
+      <h2 class='footer-content-head'>SERVICES</h2>
       <ul>
-        <li><%= link_to '旅行先を決める', "#", class: "footer-link" %></li>
+        <li><%= link_to '旅行先診断', "#", class: "footer-link" %></li>
         <li><%= link_to 'マイページ', "#", class: "footer-link" %></li>
         <li><%= link_to '観光情報を見る', "#", class: "footer-link" %></li>
       </ul>
@@ -17,11 +17,13 @@
   </div>
   <div class='randomtrip-logo'>
     <div class='randomtrip-logo-icon'>
-      <%= link_to image_tag("randomtrip_icon2.png", width:"64", height:"64", class:"logo-black"), "#" %>
+      <%= link_to image_tag("randomtrip_black.png", width:"80", height:"80", class:"logo-black"), "#" %>
     </div>
-    <div class='randomtrip-footer-title'>Random Trip</div>
+    <div class='randomtrip-footer-title'>
+    <%= link_to "RANDOM TRIP", new_destination_path, class:"randomtrip-letter" %>
+    </div>
   </div>
   <div class='copy-right'>
-    <p>© Random Trip</p>
+    <p>© RANDOM TRIP</p>
   </div>
 </div>

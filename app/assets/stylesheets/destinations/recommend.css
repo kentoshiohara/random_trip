@@ -4,67 +4,60 @@ a {
 
 .recommendation-main {
   width: 100vw;
-  /* height: 1200px; */
-  padding: 2vh 20vw;
+  padding: 2vh 15vw;
+  background: rgb(238, 247, 255);
 }
 
 .recommendation {
-  width: 85%;
-  min-width: 500px;
-  height: 1070px;
+  width: 90%;
   margin: 80px auto 80px;
-  background: rgb(240, 240, 240);;
-}
-
-.recommendation-title {
-  width: 100%;
-  height: 48px;
-  line-height: 48px;
-  font-size: 24px;
-  font-weight: bold;
-  margin-bottom: 40px;
-  text-align: center;
-  color: #232323;
-  background: rgb(221, 221, 221);
-  border-left: solid 10px rgb(178, 177, 177);
 }
 
 
 .recommendation-lists {
   width: 100%;
+  min-width: 900px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
-.recommendation-lists:nth-child(odd) {
+.recommendation-lists:nth-child(even) {
   flex-direction: row-reverse;
 }
 
 .image {
-  width: 43%;
-  padding: 20px;
+  width: 45%;
+  height: 400px;
+  margin: 0 20px;
 }
 
 .prefecture-image {
   width: 100%;
-  height: 260px;
+  height: 100%;
   object-fit: cover;
+  border-radius: 30px;
 }
 
 .recommendation-details {
-  width: 43%;
-  justify-content: flex-start;
-  padding: 20px;
+  width: 45%;
+  height: 350px;
+  padding: 20px 40px;
+  background: white;
+  border-radius: 30px;
+  margin:30px 20px;
+  border-radius: 20px;
+  border: 1px solid darkgray;
 }
 
 .prefecture-name {
   font-size: 24px;
   font-weight: bold;
-  padding-bottom: 30px;
+  padding: 30px 0;
 }
 
 .prefecture-info {
   line-height: 1.8rem;
+  color:#635f58;
 }

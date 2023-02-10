@@ -3,14 +3,14 @@
 <div class="recommendation-main">
   <div class="recommendation">
     <% if @theme.id == 1 %>
-    <% @prefecture_gourmet.each do |prefecture| %>
+    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>  
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
       </li>
       <li class="recommendation-details">
         <h2 class="prefecture-name">
-        <%= prefecture.name %>
+        <%= i + 1 %>．<%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
         <%= prefecture.info %>
@@ -37,7 +37,7 @@
     <% end %>
 
     <% elsif @theme.id == 3 %>
-    <% @prefecture_hotspring.each do |prefecture| %>
+    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>
     <ul class="recommendation-lists">
       <li class="image">
         <%= image_tag prefecture.image, class:"prefecture-image" %>
@@ -47,7 +47,7 @@
         <%= prefecture.name %>
         </h2>
         <p class="prefecture-info">
-        <%= prefecture.info %>
+        候補{i}：<%= prefecture.info %>
         </p>
       </li>
     </ul>

@@ -14,10 +14,10 @@
         <% if user_signed_in? %>
           <li><%= link_to 'マイページ', "#", class: "mypage" %></li>
           <li><%= link_to 'ログアウト', "#", method: :delete, class: "logout" %></li>
-          <li><%= link_to '旅行先診断', "#", class: "where-to-go" %></li>
+          <li><%= link_to '旅行先診断', new_destination_path, class: "where-to-go" %></li>
         <% else %>
-          <li><%= link_to 'ログイン', "#", class: "login" %></li>
-          <li><%= link_to '新規登録', "#", class: "sign-up" %></li>
+          <li><%= link_to 'ログイン', new_user_session_path, class: "login" %></li>
+          <li><%= link_to '新規登録', new_user_registration_path, class: "sign-up" %></li>
           <li><%= link_to '旅行先診断', new_destination_path, class: "where-to-go" %></li>
         <% end %>
       </ul>

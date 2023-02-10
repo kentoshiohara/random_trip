@@ -99,7 +99,8 @@ a {
 .container-title {
   font-size: 28px;
   font-weight: bold;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .container-destination {
@@ -115,6 +116,9 @@ a {
   background-color:rgb(23, 23, 23);
   border: 1px solid rgb(23, 23, 23);
   border-radius: 5px;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.1em;
+  padding: 4px 12px;
 }
 
 .click-btn {

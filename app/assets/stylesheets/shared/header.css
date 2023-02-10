@@ -25,6 +25,7 @@
 
 .header-title {
   margin-left: 1vw;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .randomtrip-letter {
@@ -45,6 +46,7 @@
   margin-right: 3vw;
   color: #1760a0;
   font-weight: bold;
+  line-height: 32px;
 }
 
 
@@ -52,6 +54,8 @@
   text-decoration: none;
   color:#1760a0;
   font-weight: bold;
+  margin-right: 3vw;
+  line-height: 32px;
 }
 
 .login {

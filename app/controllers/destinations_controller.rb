@@ -19,7 +19,9 @@ class DestinationsController < ApplicationController
   def recommend
   # binding.pry
   destination = Destination.last(params[:id])
+  # destination = Destination.new(destination_params)
   @theme = destination.theme
+
   
   @prefecture_gourmet = Prefecture.where(theme1: "グルメ").sample(3)
   @prefecture_hotspring = Prefecture.where(theme2: "温泉").sample(3)
@@ -32,6 +34,6 @@ class DestinationsController < ApplicationController
   private
 
   def destination_params
-    params.require(:destination).permit(:theme_id, :member_id, :season_id, :prefecture_id).merge(user_id: current_user.id)
+    params.require(:destination).permit(:id, :theme_id, :member_id, :season_id, :prefecture_id)
   end 
 end

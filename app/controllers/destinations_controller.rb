@@ -25,23 +25,6 @@ class DestinationsController < ApplicationController
     @prefecture_amusementpark = Prefecture.where(theme4: 'テーマパーク').sample(3)
     @prefecture_others = Prefecture.where(theme5: 'その他').sample(3)
   end   
-  
-  # def history
-  #   @history = History.new
-  # end
-  
-  # def update
-  #   @history
-  #   @user.update(user_params)
-  #   flash[:success] = "旅行先を更新しました。"
-  #   redirect_to history_destination_path(@user)
-  # end
-
-  # private
-
-  # def user_params
-  #   params.require(:user).permit(prefecture_ids: [])
-  # end 
 
   def destination_params
     params.require(:destination).permit(:id, :theme_id, :member_id, :season_id, :prefecture_id)

@@ -1,0 +1,64 @@
+.user-main {
+  width: 100vw;
+  padding: 80px 15vw;
+  background: rgb(238, 247, 255);
+}
+
+.history-container {
+  width: 50vw;
+  min-width: 400px;
+  margin: 0 auto;
+  background: white;
+  border-radius:10px;
+  box-shadow: 0 0 8px gray;
+}
+
+.history-title {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 40px;
+  text-align: center;
+  color:white;
+  background: #38a2ff;
+  border-left: solid 10px #1760a0;
+  border-radius: 10px 10px 0 0 ;
+}
+
+.donut-chart {
+width: 100%;
+height: 400px;
+padding-top: 60px;
+}
+
+
+.prefecture-check-box{
+  padding: 0 60px;
+  margin-bottom: 40px;
+}
+
+.history-details{
+  display: inline-block;
+  font-size: 18px;
+  margin: 4px;
+  letter-spacing: 0.1em;
+}
+
+.save-btn {
+  text-align: center;
+}
+
+.update {
+  padding: 8px 16px;
+  margin-bottom: 40px;
+  background:#38a2ff;
+  color: white;
+  border: 1px solid #38a2ff;
+  border-radius: 5px;
+  font-size: 20px;
+  letter-spacing: 0.1em;
+  font-family: 'Bebas Neue', cursive;
+}

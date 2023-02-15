@@ -1,24 +1,41 @@
-# README
+# テーブル設計
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## users テーブル
 
-Things you may want to cover:
+| Column                | Type   | Options                  |
+| --------------------- | ------ | ------------------------ |
+| name                  | string | null: false              |
+| email                 | string | null: false, unique: true|
+| encrypted_password    | string | null: false              |
 
-* Ruby version
+### Association
 
-* System dependencies
+- has_many :user_prefectures
+- has_many :prefectures, through::user_prefectures
 
-* Configuration
+## destinations テーブル
 
-* Database creation
+| Column                | Type       | Options           |
+| --------------------- | ---------- | ----------------- |
+| theme_id              | t.integer  | null: false       |
+| member_id             | t.integer  | null: false       |
+| season_id             | t.integer  | null: false       |
+| prefecture_id         | t.integer  | null: false       |
+| user                  | references | foreign_key: true |
 
-* Database initialization
+### Association
+- belongs_to :prefecture
+- belongs_to :theme
+- belongs_to :season
+- belongs_to :user
 
-* How to run the test suite
+## user_prefectures テーブル
 
-* Services (job queues, cache servers, search engines, etc.)
+| Column           | Type       | Options           |
+| ---------------- | ---------- | ----------------- |
+| user             | references | foreign_key: true |
+| prefecture_id    | t.integer  | null: false       |
 
-* Deployment instructions
-
-* ...
+### Association
+- belongs_to :user
+- belongs_to :prefecture

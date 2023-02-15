@@ -1,0 +1,32 @@
+<%= render "shared/header" %>
+
+<div class="contents row">
+  <div class="container">
+    <h2 class="title">ログイン</h2>
+    <%= form_with model: @user, url: user_session_path, id: 'new_user', class: 'new_user', local: true do |f| %>
+
+      <div class="field">
+        <%= f.label :email, "メールアドレス" %><br />
+        <%= f.email_field :email, class:"field-detail", autofocus: true %>
+      </div>
+
+      <div class="field">
+        <%= f.label :password, "パスワード" %><br />
+        <%= f.password_field :password, class:"field-detail", autocomplete: "off" %>
+      </div>
+
+      <% if devise_mapping.rememberable? %>
+        <div class="field">
+          <%= f.check_box :remember_me, class:"check-box" %>
+          <%= f.label :remember_me, "ログイン情報を記憶する" %>
+        </div>
+      <% end -%>
+
+      <div class="actions">
+        <%= f.submit "Sign in", class:"sign-in-btn" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

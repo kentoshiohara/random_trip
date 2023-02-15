@@ -23,6 +23,7 @@
   margin-bottom: 10px;
   letter-spacing: 0.05em;
   border-bottom: 2px solid black;
+  font-family: 'Bebas Neue', cursive;
 }
 
 .footer-link {
@@ -50,8 +51,10 @@
   font-size: 28px;
   font-weight: bold;
   letter-spacing: 0.05em;
+  font-family: 'Bebas Neue', cursive;
 }
 .copy-right {
   font-size: 16px;
   letter-spacing: 0.05em;
+  font-family: 'Bebas Neue', cursive;
 }

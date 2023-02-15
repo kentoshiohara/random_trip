@@ -7,16 +7,30 @@ a {
   padding: 2vh 15vw;
   background: rgb(238, 247, 255);
 }
+.recommendation-title {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  margin: 80px auto;
+  font-size: 32px;
+  color:#1760a0;
+  font-weight: bold;
+  min-width: 600px;
+}
+
+.recommendation-title span {
+  border-bottom: 3px solid #1760a0;
+}
 
 .recommendation {
-  width: 90%;
+  width: 85%;
   margin: 80px auto 80px;
 }
 
 
 .recommendation-lists {
   width: 100%;
-  min-width: 900px;
+  min-width: 600px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -38,16 +52,17 @@ a {
   height: 100%;
   object-fit: cover;
   border-radius: 30px;
-  border: 3px solid #38a2ff;
+  box-shadow: 0 0 8px gray;
 }
 
 .recommendation-details {
   width: 45%;
-  height: 350px;
+  height: 300px;
   padding: 20px 40px;
   background: white;
-  margin:30px 20px;
+  margin:50px 20px;
   border-radius: 20px;
+  box-shadow: 0 0 8px gray;
 }
 
 .prefecture-name {
@@ -68,11 +83,11 @@ a {
 
 .back-btn {
   padding: 8px 32px;
-  margin-bottom: 40px;
   background:#38a2ff;
   color: white;
   border: 1px solid #38a2ff;
   border-radius: 5px;
   font-size: 24px;
   letter-spacing: 0.1em;
+  font-family: 'Bebas Neue', cursive;
 }

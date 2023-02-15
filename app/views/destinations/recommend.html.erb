@@ -1,6 +1,10 @@
 <%= render "shared/header" %>
 
 <div class="recommendation-main">
+  <div class="recommendation-title">
+    <span><%= @theme.name %>：</span>
+    <span>おすすめの都道府県 3選</span>
+  </div>
   <div class="recommendation">
     <% if @theme.id == 1 %>
     <% @prefecture_gourmet.each_with_index do |prefecture, i| %>  

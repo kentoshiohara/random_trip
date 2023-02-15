@@ -9,8 +9,10 @@
     <div class='randomtrip-details'>
       <h2 class='footer-content-head'>SERVICES</h2>
       <ul>
+        <% unless user_signed_in? %>
         <li><%= link_to 'ログイン', new_user_session_path, class: "footer-link" %></li>
         <li><%= link_to '新規登録', new_user_registration_path, class: "footer-link" %></li>
+        <% end %>
         <li><%= link_to '旅行先診断', new_destination_path, class: "footer-link" %></li>
       </ul>
     </div>

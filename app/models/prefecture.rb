@@ -51,5 +51,8 @@ class Prefecture < ActiveHash::Base
 
   include ActiveHash::Associations
   has_many :destinations
+
+  has_many :user_prefectures
+  has_many :users, through: :user_prefectures
   
   end

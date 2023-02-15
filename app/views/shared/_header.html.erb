@@ -12,7 +12,7 @@
     <div class='header-right'>
       <ul class='lists-right'>
         <% if user_signed_in? %>
-          <li><%= link_to "マイページ", user_path(current_user.id), class: "mypage" %></li>
+          <li><%= link_to "マイページ",  edit_user_path(current_user.id), class: "mypage" %></li>
           <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "logout" %></li>
           <li><%= link_to '旅行先診断', new_destination_path, class: "where-to-go" %></li>
         <% else %>

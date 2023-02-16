@@ -32,29 +32,30 @@ a {
 }
 
 .img1 {
-  background-image: url('kagoshima.jpg');
-  background-position: center;
+  background-image: url('osaka.jpg');
 }
 
 .img2 {
-  background-image: url('osaka.jpg');
+  background-image: url('kagoshima.jpg');
+  background-position: center;
   animation-delay:4s;
 }
 
 .img3 {
-  background-image: url('okinawa.png');
+  background-image: url('hokkaido.jpg');
   background-position: center;
   animation-delay:8s;
 }
 
 .img4 {
-  background-image: url('kanagawa.jpg');
+  background-image: url('okinawa.png');
   background-position: center;
   animation-delay:12s;
 }
 
 .img5 {
-  background-image: url('hokkaido.jpg');
+  background-image: url('kanagawa.jpg');
+  background-position: center;
   animation-delay:16s;
 }
 

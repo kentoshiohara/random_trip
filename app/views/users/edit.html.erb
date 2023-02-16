@@ -18,9 +18,9 @@
             align: 'center',  # 位置を指定（水平方向）
             verticalAlign: 'middle',  # 位置を指定（垂直方向）
             style: {
-              color: 'black',
+              color: '#1760a0',
               fontWeight: 'bold',
-              fontSize: '24px'
+              fontSize: '28px'
             },  
           },
           plotOptions: {
@@ -31,7 +31,7 @@
             },
             pie: {
               dataLabels: {
-                enabled: true,  #データラベルを表示するか否か
+                enabled: false,  #データラベルを表示するか否か
               },
               size: "110%",
               innerSize: '50%',  # 中央(ドーナツの穴)部分のサイズを指定
@@ -42,7 +42,7 @@
     </div>
 
     <div class="prefecture-check-box">
-      <%= f.collection_check_boxes :history_ids, History.all, :id, :name, include_hidden: false do |history| %>
+      <%= f.collection_check_boxes :history_ids, History.all, :id, :name do |history| %>
       <span class="history-details"><%=  history.label {history.check_box + history.text} %></span>
       <% end %>
     </div>

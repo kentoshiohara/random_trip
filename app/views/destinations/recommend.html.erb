@@ -1,97 +1,114 @@
 <%= render "shared/header" %>
 
 <div class="recommendation-main">
-  <div class="recommendation-title">
-    <span><%= @theme.name %>：</span>
-    <span>おすすめの都道府県 3選</span>
-  </div>
-  <div class="recommendation">
-    <% if @theme.id == 1 %>
-    <% @prefecture_gourmet.each_with_index do |prefecture, i| %>  
-    <ul class="recommendation-lists">
-      <li class="image">
-        <%= image_tag prefecture.image, class:"prefecture-image" %>
-      </li>
-      <li class="recommendation-details">
-        <h2 class="prefecture-name">
-        <%= i + 1 %>．<%= prefecture.name %>
-        </h2>
-        <p class="prefecture-info">
-        <%= prefecture.info %>
-        </p>
-      </li>
-    </ul>
-    <% end %>
+  <div class="recommendation-contents">
+    <%# <div class="recommendation-title"> %>
+      <%# <span><%= @theme.name %>
+    <h1 class="recommendation-title">Places We Recommend</h1>
+    <%# </div> %>
+    <div class="recommendation">
+      <% if @theme.id == 1 %>
+      <% @prefecture_gourmet.each_with_index do |prefecture| %>  
+      <ul class="recommendation-lists">
+        <li class="image">
+          <%= image_tag prefecture.image, class:"prefecture-image" %>
+        </li>
+        <li class="recommendation-details">
+          <h2 class="prefecture-name">
+          <%= prefecture.name %>
+          </h2>
+          <p class="prefecture-info">
+          <%= prefecture.info %>
+          </p>
+          <p class="prefecture-link">
+            文章引用元：<%= link_to "#{prefecture.name}観光情報サイト", prefecture.link, target: "_blank", rel: "noopener", class: "prefecture-link-detail"%>
+          </p>
+        </li>
+      </ul>
+      <% end %>
 
-    <% elsif @theme.id == 2 %>
-    <% @prefecture_hotspring.each_with_index do |prefecture, i| %>
-    <ul class="recommendation-lists">
-      <li class="image">
-        <%= image_tag prefecture.image, class:"prefecture-image" %>
-      </li>
-      <li class="recommendation-details">
-        <h2 class="prefecture-name">
-        <%= i + 1 %>．<%= prefecture.name %>
-        </h2>
-        <p class="prefecture-info">
-        <%= prefecture.info %>
-        </p>
-      </li>
-    </ul>
-    <% end %>
+      <% elsif @theme.id == 2 %>
+      <% @prefecture_hotspring.each_with_index do |prefecture| %>
+      <ul class="recommendation-lists">
+        <li class="image">
+          <%= image_tag prefecture.image, class:"prefecture-image" %>
+        </li>
+        <li class="recommendation-details">
+          <h2 class="prefecture-name">
+          <%= prefecture.name %>
+          </h2>
+          <p class="prefecture-info">
+          <%= prefecture.info %>
+          </p>
+           <p class="prefecture-link">
+            文章引用元：<%= link_to "#{prefecture.name}観光情報サイト", prefecture.link, target: "_blank", rel: "noopener", class: "prefecture-link-detail"%>
+          </p>
+        </li>
+      </ul>
+      <% end %>
 
-    <% elsif @theme.id == 3 %>
-    <% @prefecture_resort.each_with_index do |prefecture, i| %>
-    <ul class="recommendation-lists">
-      <li class="image">
-        <%= image_tag prefecture.image, class:"prefecture-image" %>
-      </li>
-      <li class="recommendation-details">
-        <h2 class="prefecture-name">
-        <%= i + 1 %>．<%= prefecture.name %>
-        </h2>
-        <p class="prefecture-info">
-        <%= prefecture.info %>
-        </p>
-      </li>
-    </ul>
-    <% end %>
+      <% elsif @theme.id == 3 %>
+      <% @prefecture_resort.each_with_index do |prefecture, i| %>
+      <ul class="recommendation-lists">
+        <li class="image">
+          <%= image_tag prefecture.image, class:"prefecture-image" %>
+        </li>
+        <li class="recommendation-details">
+          <h2 class="prefecture-name">
+          <%= prefecture.name %>
+          </h2>
+          <p class="prefecture-info">
+          <%= prefecture.info %>
+          </p>
+          <p class="prefecture-link">
+            文章引用元：<%= link_to "#{prefecture.name}観光情報サイト", prefecture.link, target: "_blank", rel: "noopener", class: "prefecture-link-detail"%>
+          </p>
+        </li>
+      </ul>
+      <% end %>
 
-    <% elsif @theme.id == 4 %>
-    <% @prefecture_amusementpark.each_with_index do |prefecture, i|  %>
-    <ul class="recommendation-lists">
-      <li class="image">
-        <%= image_tag prefecture.image, class:"prefecture-image" %>
-      </li>
-      <li class="recommendation-details">
-        <h2 class="prefecture-name">
-        <%= i + 1 %>．<%= prefecture.name %>
-        </h2>
-        <p class="prefecture-info">
-        <%= prefecture.info %>
-        </p>
-      </li>
-    </ul>
-    <% end %>
+      <% elsif @theme.id == 4 %>
+      <% @prefecture_amusementpark.each_with_index do |prefecture, i|  %>
+      <ul class="recommendation-lists">
+        <li class="image">
+          <%= image_tag prefecture.image, class:"prefecture-image" %>
+        </li>
+        <li class="recommendation-details">
+          <h2 class="prefecture-name">
+          <%= prefecture.name %>
+          </h2>
+          <p class="prefecture-info">
+          <%= prefecture.info %>
+          </p>
+          <p class="prefecture-link">
+            文章引用元：<%= link_to "#{prefecture.name}観光情報サイト", prefecture.link, target: "_blank", rel: "noopener", class: "prefecture-link-detail"%>
+          </p>
+        </li>
+      </ul>
+      <% end %>
 
-    <% else %>
-    <% @prefecture_others.each_with_index do |prefecture, i| %>
-    <ul class="recommendation-lists">
-      <li class="image">
-        <%= image_tag prefecture.image, class:"prefecture-image" %>
-      </li>
-      <li class="recommendation-details">
-        <h2 class="prefecture-name">
-        <%= i + 1 %>．<%= prefecture.name %>
-        </h2>
-        <p class="prefecture-info">
-        <%= prefecture.info %>
-        </p>
-      </li>
-    </ul>
-    <% end %>
+      <% else %>
+      <% @prefecture_others.each_with_index do |prefecture, i| %>
+      <ul class="recommendation-lists">
+        <li class="image">
+          <%= image_tag prefecture.image, class:"prefecture-image" %>
+        </li>
+        <li class="recommendation-details">
+          <h2 class="prefecture-name">
+          <%= prefecture.name %>
+          </h2>
+          <p class="prefecture-info">
+          <%= prefecture.info %>
+          </p>
+          <p class="prefecture-link">
+            文章引用元：<%= link_to "#{prefecture.name}観光情報サイト", prefecture.link, target: "_blank", rel: "noopener", class: "prefecture-link-detail"%>
+          </p>
+        </li>
+      </ul>
+      <% end %>
 
-    <% end %>
+      <% end %>
+    </div>
   </div>
   <div class="back-btn-contents">
     <%= link_to "BACK", new_destination_path, class:"back-btn"%>

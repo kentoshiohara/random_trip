@@ -40,7 +40,6 @@ a {
 
 
 .recommendation {
-  /* width: 80%; */
   margin: 40px auto 80px;
   display: flex;
   flex-direction: row;
@@ -50,17 +49,8 @@ a {
 
 .recommendation-lists {
   width: 100%;
-  /* min-width: 600px; */
-  /* display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px; */
   padding: 0 16px;
 }
-
-/* .recommendation-lists:nth-child(even) {
-  flex-direction: row-reverse;
-} */
 
 .image {
   width: 100%;
@@ -111,7 +101,6 @@ a {
 }
 
 .prefecture-link {
-  /* text-align: start; */
   color:#55524d;
   font-size: 14px;
 }
@@ -128,11 +117,20 @@ a {
 
 .back-btn {
   padding: 8px 32px;
+  display: inline-block;
   background:#38a2ff;
   color: white;
-  border: 1px solid #38a2ff;
+  box-shadow:0 4px 0 0 #1760a0;
+  transform: translateY(-4px);
+  transition:0.3s all;
   border-radius: 5px;
   font-size: 24px;
-  letter-spacing: 0.1em;
+  font-weight: normal;
+  letter-spacing: 0.15em;
   font-family: 'Bebas Neue', cursive;
+}
+
+.back-btn:hover {
+  box-shadow:0 2px 0 0 #1760a0;
+  transform: translateY(-2px);
 }

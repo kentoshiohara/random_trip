@@ -2,6 +2,9 @@
   width: 100vw;
   padding: 80px 0;
   background: rgb(238, 247, 255);
+  background-image:url("town7.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
 }
 
 .container {
@@ -51,10 +54,18 @@
   margin-bottom: 40px;
   background:#38a2ff;
   color: white;
-  border: 1px solid #38a2ff;
+  box-shadow:0 4px 0 0 #1760a0;
+  border: #38a2ff;
+  transform: translateY(-4px);
+  transition:0.3s all;;
   border-radius: 5px;
   font-size: 20px;
-  font-weight:normal;
-  letter-spacing: 0.1em;
+  font-weight: normal;
+  letter-spacing: 0.15em;
   font-family: 'Bebas Neue', cursive;
+}
+
+.sign-up-btn:hover {
+  box-shadow:0 2px 0 0  #1760a0;
+  transform: translateY(-2px);
 }

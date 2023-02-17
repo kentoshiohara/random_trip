@@ -89,12 +89,12 @@ a {
 
 .container-box {
   background-color:white;
-  opacity: 0.8;
+  opacity: 0.9;
   border-radius: 10px;
   margin: 10px;
   padding: 20px;
-  border: 1px solid black;
   text-align: center;
+  box-shadow: 0 0 12px gray;
 }
 
 .container-title {
@@ -107,21 +107,32 @@ a {
 .container-destination {
   font-size: 20px;
   font-weight: bold;
-  margin-bottom: 12px;
+  margin-bottom: 18px;
+  color: rgb(44, 44, 44);
 }
 
 .destination-btn {
+  text-align: center;
+}
+
+.click-btn {
+  display: inline-block;
+  color: #fff;
   width: 100px;
+  height: auto;
+  text-decoration: none;
   font-size: 20px;
-  margin: 0 auto;
-  background-color:rgb(23, 23, 23);
-  border: 1px solid rgb(23, 23, 23);
+  background-color:rgb(78, 78, 78);
+  box-shadow:0 4px 0 0 darkgray;
+  transform: translateY(-4px);
+  transition:0.3s all;
   border-radius: 5px;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.1em;
   padding: 4px 12px;
 }
 
-.click-btn {
-  color: white;
+.click-btn:hover {
+  box-shadow:0 2px 0 0 darkgray;
+  transform: translateY(-2px);
 }

@@ -1,12 +1,11 @@
 class UsersController < ApplicationController
+  before_action :move_to_index
 
   def edit
     @user = current_user
     # 以下はhigh-chartsの記述
     user_histories = @user.histories.count(:id)
-    
     @user_histories, @history_true = User.history_record(user_histories)
-    
   end
   
   def update
@@ -21,5 +20,10 @@ class UsersController < ApplicationController
     params.require(:user).permit(history_ids: [])
   end 
 
-  
+  def move_to_index
+    unless user_signed_in?
+      redirect_to destinations_path
+    end
+  end
+
 end

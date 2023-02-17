@@ -79,6 +79,7 @@ a {
   font-weight: bold;
   margin-bottom: 32px;
   margin-top: 16px;
+  width: 120px;
 }
 
 .prefecture-name:before {

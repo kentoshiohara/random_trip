@@ -4,6 +4,7 @@
 
 .top-page-header {
   width: 100vw;
+  min-width: 599px;
   padding: 2vh 15vw;
   background: #ffffff;;
   color: #1760a0;
@@ -24,7 +25,7 @@
 }
 
 .header-title {
-  margin-left: 1vw;
+  margin:0 1vw;
   font-family: 'Bebas Neue', cursive;
 }
 
@@ -40,43 +41,40 @@
   font-size: 16px;
 }
 
-.mypage {
+.link {
+  display: inline-block;
   text-decoration: none;
   margin-right: 3vw;
   color: #1760a0;
-  font-weight: bold;
   line-height: 32px;
+	transition: all .3s ease 0s;
 }
 
-
-.logout {
-  text-decoration: none;
-  color:#1760a0;
-  font-weight: bold;
-  margin-right: 3vw;
-  line-height: 32px;
+.link:hover {
+  transform: scale(1.1);
+  border-bottom: 1px solid #1760a0;
 }
 
-.login {
-  text-decoration: none;
-  line-height: 32px;
-  margin-right: 3vw;
-  color: #1760a0;
-  font-weight: bold;
+/* タブレット表示 */
+@media (max-width: 900px) {
+  .header-contents {
+    display: block;
+  }
+  
+  .header-left {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .header-right {
+    display: flex;
+    justify-content: center;
+  }
+
 }
 
-.sign-up {
-  text-decoration: none;
-  color: #1760a0;
-  line-height: 32px;
-  margin-right: 3vw;
-  font-weight: bold;
-}
+/* スマホ表示 */
+@media (max-width: 599px) {
 
-.where-to-go {
-  text-decoration: none;
-  color: #1760a0;
-  line-height: 32px;
-  font-weight: bold;
-  margin-right: 3vw;
 }

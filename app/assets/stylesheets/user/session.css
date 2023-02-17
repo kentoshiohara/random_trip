@@ -1,5 +1,7 @@
 .contents {
   width: 100vw;
+  min-width: 599px;
+  height: 70vh;
   padding: 80px 0;
   background: rgb(238, 247, 255);
   background-image:url("town10.png");

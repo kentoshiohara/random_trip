@@ -1,8 +1,11 @@
-.contents {
+.contents-reg {
   width: 100vw;
+  min-width: 599px;
+  height: 80vh;
   padding: 80px 0;
   background: rgb(238, 247, 255);
-  background-image:url("town7.png");
+  background-image:url("town10.png");
+  background-size: 50%;
   background-position: bottom;
   background-repeat: repeat-x;
 }
@@ -10,7 +13,7 @@
 .container {
   width: 30vw;
   min-width: 400px;
-  margin: 0 auto;
+  margin: 0 auto 80px;
   background: white;
   border-radius: 10px;
   box-shadow: 0 0 8px gray;

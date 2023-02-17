@@ -4,6 +4,7 @@ a {
 
 .recommendation-main {
   width: 100vw;
+  min-width: 599px;
   padding: 2vh 15vw;
   background: rgb(238, 247, 255);
 }
@@ -17,7 +18,7 @@ a {
   font-size: 40px;
   color:#1760a0;
   font-weight: bold;
-  min-width: 600px;
+  width: 100%;
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.05em;
   position: relative;
@@ -133,4 +134,38 @@ a {
 .back-btn:hover {
   box-shadow:0 2px 0 0 #1760a0;
   transform: translateY(-2px);
+}
+
+/* タブレット表示 */
+@media (max-width: 1499px) {
+  .recommendation {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 40px auto 40px;
+  }
+  
+  .recommendation-lists {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+/* タブレット・スマホ表示 */
+@media (max-width: 1000px) {
+  .recommendation {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 40px auto 40px;
+  }
+  
+  .recommendation-lists {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .recommendation-details {
+    padding: 16px 24px 36px;
+  }
 }

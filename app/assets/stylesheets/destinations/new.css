@@ -4,6 +4,7 @@ a {
 
 .questionnaire-container {
   width: 100vw;
+  min-width: 599px;
   background: rgb(238, 247, 255);
   padding: 80px 0;
   background-image:url("town10.png");

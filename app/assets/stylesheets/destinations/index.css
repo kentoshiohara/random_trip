@@ -4,6 +4,7 @@ a {
 
 .main {
   width: 100vw;
+  min-width: 599px;
   height: 80vh;
 }
 
@@ -135,4 +136,21 @@ a {
 .click-btn:hover {
   box-shadow:0 2px 0 0 darkgray;
   transform: translateY(-2px);
+}
+
+
+/* タブレット表示 */
+@media (max-width: 1024px) {
+  .main-container {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+/* スマホ表示 */
+@media (max-width: 599px) {
+  .main-container {
+    width: 360px;
+    margin: 0 auto;
+  }
 }

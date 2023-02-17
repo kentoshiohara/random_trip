@@ -1,6 +1,7 @@
 
 .footer {
   width: 100vw;
+  min-width: 599px;
   padding: 5vh 0;
   color: black;
   background-color:#eeeeee;

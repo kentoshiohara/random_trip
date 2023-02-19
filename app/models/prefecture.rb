@@ -38,7 +38,7 @@ class Prefecture < ActiveHash::Base
       {id: 36, name: '徳島県', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "tokushima.jpg", link:"https://www.awanavi.jp/"},
       {id: 37, name: '香川県', theme1: 'グルメ', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "kagawa.jpg", link:"https://www.my-kagawa.jp/"},
       {id: 38, name: '愛媛県', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "ehime.jpg", link:"https://www.iyokannet.jp/"},
-      {id: 39, name: '高知県', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "kochi.jpg", link:"https://kochi-tabi.jp/"},
+      {id: 39, name: '高知県', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "kouchi.jpg", link:"https://kochi-tabi.jp/"},
       {id: 40, name: '福岡県', theme1: 'グルメ', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "fukuoka.jpg", link:"https://www.crossroadfukuoka.jp/"},
       {id: 41, name: '佐賀県', theme2: '温泉', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "saga.jpg", link:"https://www.asobo-saga.jp/"},
       {id: 42, name: '長崎県', theme4:'テーマパーク', theme5: 'その他', info: "テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト", image: "nagasaki.jpg", link:"https://www.nagasaki-tabinet.com/"},

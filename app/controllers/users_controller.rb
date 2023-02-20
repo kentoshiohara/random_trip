@@ -10,8 +10,12 @@ class UsersController < ApplicationController
   
   def update
     current_user.update(user_params)
-    flash[:sucess] = "都道府県訪問記録を更新しました"
     redirect_to edit_user_path(current_user.id)
+  end
+
+  def ranking
+    # ユーザーに紐づいた訪問数情報を取得して@user_ranks変数に代入する
+    @user_history_ranks = User.find(UserHistory.group(:user_id).order('count(history_id) desc').pluck(:user_id))
   end
 
   private

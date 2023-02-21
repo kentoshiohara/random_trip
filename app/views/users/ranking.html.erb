@@ -1,0 +1,46 @@
+<%= render "shared/header" %>
+
+<div class="ranking-main">
+  <div class="ranking-container">
+    <h2 class="ranking-title">都道府県訪問数ランキング</h2>
+    <table>
+      <tr class="tr_top">
+        <th>ランク</th>
+        <th>ユーザー名</th>
+        <th>訪問数</th>
+      </tr>
+      <% @user_history_ranks.each.with_index(1) do |rank, i| %>
+      <% if i == 1 %>
+      <tr class="rank1 rank_hover">
+        <td><span><%= image_tag("gold_icon.png", class:"crown") %></span><%= i %>位</td>
+        <td><%= rank.name %></td>
+        <td><%= rank.histories.count %></td> 
+      </tr>
+      <% elsif i == 2 %>
+      <tr class="rank2 rank_hover">
+        <td><span><%= image_tag("silver_icon.png", class:"crown") %></span><%= i %>位</td>
+        <td><%= rank.name %></td>
+        <td><%= rank.histories.count %></td> 
+      </tr>
+      <% elsif i == 3 %>
+      <tr class="rank3 rank_hover">
+        <td><span><%= image_tag("blonze_icon.png", class:"crown") %></span><%= i %>位</td>
+        <td><%= rank.name %></td>
+        <td><%= rank.histories.count %></td> 
+      </tr>
+      <% else %>
+      <tr class="rank_bottom rank_hover">
+        <td><%= i %>位</td>
+        <td><%= rank.name %></td>
+        <td><%= rank.histories.count %></td> 
+      </tr>
+      <% end %>
+      <% end %>
+    </table>
+    <div class="ranking-btn">
+      <%= link_to "BACK", edit_user_path(current_user.id), class:"ranking-button"%>
+    </div>
+  </div>
+</div>
+
+<%= render "shared/footer" %>

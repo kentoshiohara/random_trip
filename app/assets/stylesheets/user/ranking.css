@@ -1,0 +1,122 @@
+.ranking-main {
+  width: 100vw;
+  min-width: 599px;
+  padding: 80px 15vw;
+  background: rgb(238, 247, 255);
+  background-image:url("town10.png");
+  background-position: bottom;
+  background-repeat: repeat-x;
+}
+
+.ranking-container {
+  width: 55%;
+  margin: 0 auto;
+  background: white;
+  border-radius:10px;
+  box-shadow: 0 0 8px gray;
+  padding-bottom: 40px;
+}
+
+.ranking-title {
+  width: 100%;
+  height: 48px;
+  line-height: 48px;
+  letter-spacing: 0.1em;
+  font-size: 20px;
+  font-weight: 100;
+  margin-bottom: 60px;
+  text-align: center;
+  color:white;
+  background: #38a2ff;
+  border-left: solid 10px #1760a0;
+  border-radius: 10px 10px 0 0 ;
+}
+
+/* 下部ランキングテーブル */
+table{
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 80%;
+  margin:0 auto 40px;
+}
+
+th {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.rank1 {
+  font-size: 20px;
+}
+
+.rank2 {
+  font-size: 20px;
+}
+
+.rank3 {
+  font-size: 20px;
+}
+
+.rank_bottom {
+  font-size: 16px;
+}
+
+.crown {
+  width: 36px;
+  height: 36px;
+  vertical-align: bottom;
+}
+
+td span {
+  display: inline-block;
+  margin-right: 0.8vw;
+}
+
+table tr{
+  border-bottom: 2px dotted rgb(190, 190, 190);
+}
+
+table tr:nth-child(even) {
+  background: rgb(245, 250, 255);
+}
+
+
+.tr_top {
+  border-bottom: 3px solid rgb(190, 190, 190);
+}
+
+table th,table td{
+  text-align: center;
+  width: 25%;
+  padding: 15px 0;
+}
+
+.rank_hover:hover {
+  font-weight: bold;
+  transform: scale(1.05);
+}
+
+/* 下部ボタン */
+.ranking-btn {
+  text-align: center;
+}
+
+.ranking-button {
+  padding: 8px 32px;
+  display: inline-block;
+  background:#38a2ff;
+  color: white;
+  box-shadow:0 4px 0 0 #1760a0;
+  transform: translateY(-4px);
+  transition:0.3s all;
+  border-radius: 5px;
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 0.15em;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.ranking-button:hover {
+  box-shadow:0 2px 0 0 #1760a0;
+  transform: translateY(-2px);
+}

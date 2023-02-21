@@ -15,7 +15,7 @@ class UsersController < ApplicationController
 
   def ranking
     # ユーザーに紐づいた訪問数情報を取得して@user_ranks変数に代入する
-    @user_history_ranks = User.find(UserHistory.group(:user_id).order('count(history_id) desc').pluck(:user_id))
+    @user_history_ranks = User.find(UserHistory.group(:user_id).order('count(history_id) desc').limit(10).pluck(:user_id))
   end
 
   private

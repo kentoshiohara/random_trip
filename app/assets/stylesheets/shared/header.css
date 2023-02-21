@@ -41,19 +41,53 @@
   font-size: 16px;
 }
 
-.link {
-  display: inline-block;
+/* マイページリンク作成 */
+.accordion-tab {
+  position: relative;
+}
+
+.hidden {
+  display: none;
+}
+
+.accordion_contents {
+  position: absolute;
+  top: 123px;
+  text-align: center;
+  background-color: #ffffff;
+  z-index: 1;
+}
+
+.content {
+  display: block;
   text-decoration: none;
-  margin-right: 3vw;
+  padding:2vh 2vw;
   color: #1760a0;
   line-height: 32px;
 	transition: all .3s ease 0s;
+  cursor: pointer;
+}
+
+.content:hover {
+  background: rgb(238, 238, 238);
+  transform: scale(1.1);
+}
+
+.link {
+  display: inline-block;
+  text-decoration: none;
+  margin:0 2vw;
+  color: #1760a0;
+  line-height: 32px;
+	transition: all .3s ease 0s;
+  cursor: pointer;
 }
 
 .link:hover {
   transform: scale(1.1);
   border-bottom: 1px solid #1760a0;
 }
+
 
 /* タブレット表示 */
 @media (max-width: 900px) {

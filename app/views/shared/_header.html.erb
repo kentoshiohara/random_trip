@@ -12,9 +12,15 @@
     <nav class='header-right'>
       <ul class='lists-right'>
         <% if user_signed_in? %>
-          <li><%= link_to "マイページ",  edit_user_path(current_user.id), class: "link" %></li>
-          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "link" %></li>
+          <li id="accordion_tab" class="link"><%= current_user.name%>さん</li>
+          <%# マイページリンク作成 %>
+          <ul class="accordion_contents hidden" id="accordion-contents">
+          <li><%= link_to '記録', edit_user_path(current_user.id), class: "content" %></li>
+          <li><%= link_to 'ランキング', ranking_user_path(current_user.id), class: "content" %></li>
+          <li><%= link_to 'ログアウト', destroy_user_session_path, method: :delete, class: "content" %></li>
+          </ul>
           <li><%= link_to '旅行先診断', new_destination_path, class: "link" %></li>
+          <%# マイページリンク作成 %>
         <% else %>
           <li><%= link_to 'ログイン', new_user_session_path, class: "link" %></li>
           <li><%= link_to '新規登録', new_user_registration_path, class: "link" %></li>

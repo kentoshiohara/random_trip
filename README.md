@@ -34,7 +34,7 @@ https://random-trip-ksmj.onrender.com
 # 洗い出した要件
 [要件定義シート](https://docs.google.com/spreadsheets/d/1k_HfhNildvtE2nmj8IILHJtEignsNJj2mvZuSAlQf0Q/edit#gid=113521568)
 
-# 実装した機能についての画像やGIGおよびその説明
+# 実装した機能についての画像やGIFおよびその説明
 
 - ユーザー管理機能  
   ユーザー新規登録画面

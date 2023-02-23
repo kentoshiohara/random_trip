@@ -112,6 +112,14 @@ a {
   color:#608eb6;;
 }
 
+.chatgpt {
+  font-size: 12px;
+  margin:0 40px 40px;
+  color: #55524d;
+  font-style:italic;
+  margin-top: 10px;
+}
+
 .back-btn-contents {
   text-align: center;
   margin-bottom: 80px;

@@ -44,7 +44,7 @@ https://random-trip-ksmj.onrender.com
 
 - 旅行先提案機能  
   選択した「旅行のテーマ」の情報を基におすすめの旅行先をランダムで3つ提案。
-[![Image from Gyazo](https://i.gyazo.com/8ebb9100065d46c67ad86a8ed93e9666.gif)](https://gyazo.com/8ebb9100065d46c67ad86a8ed93e9666)
+[![Image from Gyazo](https://i.gyazo.com/7df131500b8aaba5cfdf1ff5d60df86f.gif)](https://gyazo.com/7df131500b8aaba5cfdf1ff5d60df86f)
 
 - 旅行先管理機能  
   ユーザー情報に紐づいた過去の旅行先を保存することができる。ドーナツグラフで可視化。
@@ -56,10 +56,9 @@ https://random-trip-ksmj.onrender.com
 
 - レスポンシブ画面対応  
   PC、スマートフォンと異なる画面幅に対応できるように、レスポンシブデザインを実装。
-  [![Image from Gyazo](https://i.gyazo.com/9657879cc74ad58cff55f6d4ec5a8262.gif)](https://gyazo.com/9657879cc74ad58cff55f6d4ec5a8262)
+[![Image from Gyazo](https://i.gyazo.com/167af9ce3b917a979ff5a566ea231fdc.gif)](https://gyazo.com/167af9ce3b917a979ff5a566ea231fdc)
 
 # 実装予定の機能
-- 都道府県詳細情報を記述。
 - 都道府県一覧を円グラフではなく日本地図で表現。
 - ユーザーアカウントの削除機能
 
